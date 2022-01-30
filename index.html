@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Source+Serif+4:ital,wght@1,300&display=swap" rel="stylesheet">
+        <title>to-do-list</title>
+    </head>
+    <body style>
+        <div class="box">
+            <h2 id="clock">00:00:00</h2>
+            <div class="app">
+                <a href="https://www.google.com/"><img class="img1" src="img/google.png"></a>
+                <a href="https://www.youtube.com/"><img class="img2" src="img/youtube.png"></a>
+                <a href="https://www.naver.com/"><img class="img3" src="img/naver.png"></a>
+            </div>
+            <form class="hidden" id="login-form">
+                <input class="name-form" required maxlength="15" type="text" placeholder="What is your name?" />
+                <button class="btn">Log In</button>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+
+            <br>
+            <form id="todo-form">
+                <input class="text-field" type="text" placeholder="Write a To Do and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
+            <div class="bottom">
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="weather">
+                    
+                    <span></span>
+                    <span></span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
